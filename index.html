@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OSNOVA: меблі з дуба й каменю</title>
+  <meta name="description" content="OSNOVA: меблі з дуба, каменю та вовни, зроблені в Україні.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three/three.module.js" } }
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <a class="nav__logo" href="#top">OSNOVA</a>
+    <nav class="nav__links">
+      <a href="#catalog" data-i18n="nav.catalog"></a>
+      <a href="#materials" data-i18n="nav.materials"></a>
+      <a href="#order" data-i18n="nav.order"></a>
+    </nav>
+    <div class="nav__lang" role="group" aria-label="Language">
+      <button type="button" data-lang="uk">UA</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="scene">
+      <div class="scene__pin">
+        <h1 class="word">OSNOVA</h1>
+        <canvas class="stage" aria-hidden="true"></canvas>
+
+        <div class="intro">
+          <div class="intro__copy">
+            <p class="intro__tagline" data-i18n="hero.tagline"></p>
+            <a class="btn" href="#catalog" data-i18n="hero.cta"></a>
+          </div>
+          <div class="fabric" role="group" data-i18n-label="hero.fabric">
+            <p data-i18n="hero.fabric"></p>
+            <div class="fabric__list">
+              <button type="button" data-color="#a4ae66" data-i18n-label="fabric.olive" style="--c:#59603a"></button>
+              <button type="button" data-color="#e2ae86" data-i18n-label="fabric.clay" style="--c:#a57f61"></button>
+              <button type="button" data-color="#6a6865" data-i18n-label="fabric.coal" style="--c:#2d2b2a"></button>
+            </div>
+          </div>
+        </div>
+
+        <article class="panel">
+          <h2 data-i18n="story.a.title"></h2>
+          <p data-i18n="story.a.text"></p>
+        </article>
+        <article class="panel">
+          <h2 data-i18n="story.b.title"></h2>
+          <p data-i18n="story.b.text"></p>
+        </article>
+        <article class="panel">
+          <h2 data-i18n="story.c.title"></h2>
+          <p data-i18n="story.c.text"></p>
+        </article>
+        <article class="panel">
+          <h2 data-i18n="story.d.title"></h2>
+          <p data-i18n="story.d.text"></p>
+        </article>
+
+        <div class="labels" aria-hidden="true">
+          <span class="label" data-piece="chair"><span data-i18n="p.chair.name"></span> <b data-i18n="p.chair.price"></b></span>
+          <span class="label" data-piece="sofa"><span data-i18n="p.sofa.name"></span> <b data-i18n="p.sofa.price"></b></span>
+          <span class="label" data-piece="table"><span data-i18n="p.table.name"></span> <b data-i18n="p.table.price"></b></span>
+          <span class="label" data-piece="lamp"><span data-i18n="p.lamp.name"></span> <b data-i18n="p.lamp.price"></b></span>
+          <span class="label" data-piece="side"><span data-i18n="p.side.name"></span> <b data-i18n="p.side.price"></b></span>
+          <span class="label" data-piece="stool"><span data-i18n="p.stool.name"></span> <b data-i18n="p.stool.price"></b></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <h2 data-i18n="catalog.title"></h2>
+      <div class="catalog__grid"></div>
+    </section>
+
+    <section class="room">
+      <img src="assets/img/F-08.webp" data-i18n-alt="room.alt" loading="lazy">
+      <p data-i18n="room.text"></p>
+    </section>
+
+    <section class="materials" id="materials">
+      <h2 data-i18n="materials.title"></h2>
+      <div class="materials__list">
+        <figure>
+          <img src="assets/img/F-09a.webp" data-i18n-alt="m.wool.name" loading="lazy">
+          <figcaption><strong data-i18n="m.wool.name"></strong><span data-i18n="m.wool.text"></span></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/F-09b.webp" data-i18n-alt="m.oak.name" loading="lazy">
+          <figcaption><strong data-i18n="m.oak.name"></strong><span data-i18n="m.oak.text"></span></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/F-09c.webp" data-i18n-alt="m.stone.name" loading="lazy">
+          <figcaption><strong data-i18n="m.stone.name"></strong><span data-i18n="m.stone.text"></span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="order" id="order">
+      <figure class="order__pic"><img src="assets/img/F-10.webp" data-i18n-alt="order.alt" loading="lazy"></figure>
+      <h2 data-i18n="order.title"></h2>
+      <ol class="order__steps">
+        <li><strong data-i18n="order.1.name"></strong><span data-i18n="order.1.text"></span></li>
+        <li><strong data-i18n="order.2.name"></strong><span data-i18n="order.2.text"></span></li>
+        <li><strong data-i18n="order.3.name"></strong><span data-i18n="order.3.text"></span></li>
+        <li><strong data-i18n="order.4.name"></strong><span data-i18n="order.4.text"></span></li>
+      </ol>
+      <a class="btn" href="#order" data-i18n="order.cta"></a>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span data-i18n="foot.demo"></span>
+    <span>2026</span>
+  </footer>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
